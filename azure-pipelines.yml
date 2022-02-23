@@ -14,14 +14,14 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'DemoServiceConnection'
-    testProjectPath: 'UiBank_RPATesting_Demo'
+    testProjectPath: 
     folderName: 'Modern Folder'
     testReportDestination: 'Output'
 
 - task: UiPathPack@2
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: 'UiBank_RPATesting_Demo'
+    projectJsonPath: 
     outputType: 'Process'
     orchestratorConnection: 'DemoServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
