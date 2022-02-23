@@ -1,0 +1,14 @@
+﻿{
+  "Id": "1vOSBA9CKUuFGMon_UOjTg",
+  "Reference": "qvpzsOM1vk6wPtJQHKyxgg/1vOSBA9CKUuFGMon_UOjTg",
+  "ParentRef": "qvpzsOM1vk6wPtJQHKyxgg/rYd4FytoXU6SxB5OEaa3Xg",
+  "Name": "Loan Term",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2022-02-23T06:48:36.012945Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-02-23T06:48:36.012945Z"
+}
