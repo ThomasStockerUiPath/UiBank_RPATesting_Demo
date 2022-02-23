@@ -31,7 +31,7 @@ steps:
     orchestratorConnection: 'DemoServiceConnection'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'Modern Folder'
-    entryPoints: 'Main.xaml'
+    entryPoints: 'Workflows\Main.xaml'
 
 - task: PublishPipelineArtifact@1
   inputs:
