@@ -26,12 +26,6 @@ steps:
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     runWorkflowAnalysis: true
 
-- task: UiPathDeploy@2
-  inputs:
-    orchestratorConnection: 'DemoServiceConnection'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'Modern Folder'
-    entryPoints: 'Workflows\Main.xaml'
 
 - task: PublishPipelineArtifact@1
   inputs:
