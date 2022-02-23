@@ -1,0 +1,66 @@
+{
+  "name": "UiBank_RPATesting_Demo",
+  "description": "Blank Process",
+  "main": "Workflows\\Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.12.1-beta.2384009]",
+    "UiPath.Mail.Activities": "[1.14.0-beta.2363613]",
+    "UiPath.System.Activities": "[22.2.0-alpha.2383239]",
+    "UiPath.Testing.Activities": "[1.4.6]",
+    "UiPath.UIAutomation.Activities": "[22.2.0-beta.2385005]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.2.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "966a6d39-64be-49e1-a426-25aa9ba191d7",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\UnitTests\\ApplyForLoan_StraightTrhoudh.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "CSharp",
+  "entryPoints": [
+    {
+      "filePath": "Workflows\\Main.xaml",
+      "uniqueId": "b61f26ec-9d72-4343-87e5-06efaec141d0",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
