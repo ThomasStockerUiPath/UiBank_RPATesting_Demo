@@ -14,18 +14,25 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'DemoServiceConnection'
-    testProjectPath: 
+    testProjectPath: 'Project'
     folderName: 'Modern Folder'
     testReportDestination: 'Output'
 
 - task: UiPathPack@2
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: 
+    projectJsonPath: 'Project'
     outputType: 'Process'
     orchestratorConnection: 'DemoServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     runWorkflowAnalysis: true
+
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'DemoServiceConnection'
+    packagesPath: '''$(Build.ArtifactStagingDirectory)\Output'''
+    folderName: 'Modern Folder'
+    entryPoints: 'Main.xaml'
 
 - task: PublishPipelineArtifact@1
   inputs:
