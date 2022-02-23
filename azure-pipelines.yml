@@ -22,7 +22,6 @@ steps:
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: 'Project'
-    outputType: 'Process'
     orchestratorConnection: 'DemoServiceConnection'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     runWorkflowAnalysis: true
