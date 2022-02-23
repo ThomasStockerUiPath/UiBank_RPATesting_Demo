@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="bfMRmfs2VkmXTEmqbNw1-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/loans/result/6215d8d6c380ad006e302a0b/7/true" DesignTimeRectangle="615, 495, 707, 24" FriendlyName="'6215d8d6c380ad006e302a0b'" FullSelectorArgument="&lt;webctrl id='loanID' tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl id='loanID' tag='H4' type='' class='text-blue' /&gt;" Guid="edf96275-78bb-48ea-a307-3bfbbd20dfac" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="0995b5fd13cb7867b8d8e731c471cee6.png" xmlns="">0xYn7AOm8r0-1T9Rizjx97A</imageRef>
-    </TargetAnchorable>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>
