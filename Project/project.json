@@ -57,6 +57,12 @@
       "uniqueId": "b61f26ec-9d72-4343-87e5-06efaec141d0",
       "input": [],
       "output": []
+    },
+    {
+      "filePath": "Workflows\\SubWorkflows\\UpdateLoanApplicantsTable.xaml",
+      "uniqueId": "6a9bda9a-1d70-4fa5-b6f4-0a4545e5ceac",
+      "input": [],
+      "output": []
     }
   ],
   "isTemplate": false,
