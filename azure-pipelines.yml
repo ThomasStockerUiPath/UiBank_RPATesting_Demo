@@ -30,7 +30,7 @@ steps:
 - task: UiPathDeploy@2
   inputs:
     orchestratorConnection: 'DemoServiceConnection'
-    packagesPath: '''$(Build.ArtifactStagingDirectory)\Output'''
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'Modern Folder'
     entryPoints: 'Main.xaml'
 
