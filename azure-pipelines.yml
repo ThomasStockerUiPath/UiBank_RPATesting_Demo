@@ -1,0 +1,38 @@
+trigger:
+- master
+
+pool:
+# A windows agent is required to execute the plugin tasks
+ vmImage: windows-2022
+
+steps:
+# Install Platform step will install the CLI which is self-contained in this task.
+
+# If this task is not used, the CLI will be downloaded from an external nuget feed
+- task: UiPathInstallPlatform@2
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'DemoServiceConnection'
+    testProjectPath: 'UiBank_RPATesting_Demo'
+    folderName: 'Modern Folder'
+    testReportDestination: 'Output'
+
+- task: UiPathPack@2
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: 'UiBank_RPATesting_Demo'
+    outputType: 'Process'
+    orchestratorConnection: 'DemoServiceConnection'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    runWorkflowAnalysis: true
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)\Output'
+    artifact: 'UiBankProcess'
+    publishLocation: 'pipeline'
+
+
+
+
