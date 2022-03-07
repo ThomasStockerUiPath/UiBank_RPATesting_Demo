@@ -39,6 +39,8 @@ steps:
     orchestratorConnection: 'DemoServiceConnection'
     processName: 'CI.Demo.Process'
     folderName: 'Modern Folder'
+    strategy: 'Specific'
+    robotsIds: 'Thomas Stocker'
 
 
 
