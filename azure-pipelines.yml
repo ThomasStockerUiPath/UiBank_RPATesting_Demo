@@ -1,4 +1,4 @@
-#trigger:
+trigger:
 - master
 
 pool:
@@ -42,9 +42,9 @@ steps:
 #    strategy: 'Specific'
 #    robotsIds: 'Thomas Stocker (laptop-2flmrhn0\thomas stocker)'
 
-  - task: UiPathTest@2
-    inputs:
-      testTarget: 'TestSet'
-      orchestratorConnection: 'DemoServiceConnection'
-      testSet: 'Arguments'
-      folderName: 'Modern Folder'
+- task: UiPathTest@2
+  inputs:
+   testTarget: 'TestSet'
+   orchestratorConnection: 'DemoServiceConnection'
+   testSet: 'Arguments'
+   folderName: 'Modern Folder'
