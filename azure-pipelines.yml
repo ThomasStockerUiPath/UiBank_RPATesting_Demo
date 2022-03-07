@@ -10,29 +10,34 @@ steps:
 
 # If this task is not used, the CLI will be downloaded from an external nuget feed
 - task: UiPathInstallPlatform@2
-- task: UiPathTest@2
+#  - task: UiPathTest@2
+#  inputs:
+#     testTarget: 'TestProject'
+#     orchestratorConnection: 'DemoServiceConnection'
+#     testProjectPath: 'Project'
+#     folderName: 'Modern Folder'
+#   testReportDestination: 'Output'
+
+# - task: UiPathPack@2
+#   inputs:
+#     versionType: 'AutoVersion'
+#     projectJsonPath: 'Project'
+#     orchestratorConnection: 'DemoServiceConnection'
+#     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+#     runWorkflowAnalysis: true
+
+
+# - task: PublishPipelineArtifact@1
+#   inputs:
+#     targetPath: '$(Build.ArtifactStagingDirectory)\Output'
+#     artifact: 'UiBankProcess'
+#     publishLocation: 'pipeline'
+
+
+- task: UiPathRunJob@2
   inputs:
-    testTarget: 'TestProject'
     orchestratorConnection: 'DemoServiceConnection'
-    testProjectPath: 'Project'
-    folderName: 'Modern Folder'
-    testReportDestination: 'Output'
-
-- task: UiPathPack@2
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: 'Project'
-    orchestratorConnection: 'DemoServiceConnection'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-    runWorkflowAnalysis: true
-
-
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)\Output'
-    artifact: 'UiBankProcess'
-    publishLocation: 'pipeline'
-
+    processName: 'CI.Demo.Process'
 
 
 
