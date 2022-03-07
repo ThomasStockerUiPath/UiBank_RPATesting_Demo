@@ -38,6 +38,7 @@ steps:
   inputs:
     orchestratorConnection: 'DemoServiceConnection'
     processName: 'CI.Demo.Process'
+    folderName: 'Modern Folder'
 
 
 
