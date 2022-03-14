@@ -1,2 +1,2 @@
 name,type,value,description
-Asset1,text,"{MaxRetryNumber:3 ,Name:My Test Process}",some description
+foo,text,"{MaxRetryNumber:3 ,Name:My Test Process}",some description
