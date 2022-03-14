@@ -55,4 +55,4 @@ steps:
     orchestratorConnection: 'DemoServiceConnection'
     folderName: 'Modern Folder'
     assetActionType: 'Deploy'
-    csvFile: 'assets'
+    csvFile: 'assets.csv'
