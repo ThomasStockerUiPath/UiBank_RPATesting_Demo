@@ -10,13 +10,15 @@ steps:
 
 # If this task is not used, the CLI will be downloaded from an external nuget feed
 - task: UiPathInstallPlatform@2
+
 - task: UiPathTest@2
- inputs:
- testTarget: 'TestProject'
- orchestratorConnection: 'DemoServiceConnection'
- testProjectPath: 'Project'
- folderName: 'Modern Folder'
- testReportDestination: 'Output'
+  inputs:
+    attachRobotLogs: true
+    testTarget: 'TestProject'
+    orchestratorConnection: 'DemoServiceConnection'
+    testProjectPath: 'Project'
+    folderName: 'Modern Folder'
+    testReportDestination: 'Output'
 
 # - task: UiPathPack@2
 #   inputs:
