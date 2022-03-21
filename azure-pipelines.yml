@@ -10,13 +10,13 @@ steps:
 
 # If this task is not used, the CLI will be downloaded from an external nuget feed
 - task: UiPathInstallPlatform@2
-#  - task: UiPathTest@2
-#  inputs:
-#     testTarget: 'TestProject'
-#     orchestratorConnection: 'DemoServiceConnection'
-#     testProjectPath: 'Project'
-#     folderName: 'Modern Folder'
-#   testReportDestination: 'Output'
+- task: UiPathTest@2
+ inputs:
+ testTarget: 'TestProject'
+ orchestratorConnection: 'DemoServiceConnection'
+ testProjectPath: 'Project'
+ folderName: 'Modern Folder'
+ testReportDestination: 'Output'
 
 # - task: UiPathPack@2
 #   inputs:
@@ -50,9 +50,9 @@ steps:
 #   folderName: 'Modern Folder'
 
 
-- task: UiPathAssets@2
-  inputs:
-    orchestratorConnection: 'DemoServiceConnection'
-    folderName: 'Modern Folder'
-    assetActionType: 'Deploy'
-    csvFile: 'assets.csv'
+#- task: UiPathAssets@2
+#  inputs:
+#    orchestratorConnection: 'DemoServiceConnection'
+#    folderName: 'Modern Folder'
+#    assetActionType: 'Deploy'
+#    csvFile: 'assets.csv'
