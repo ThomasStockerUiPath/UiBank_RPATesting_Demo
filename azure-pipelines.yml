@@ -9,9 +9,9 @@ steps:
 # Install Platform step will install the CLI which is self-contained in this task.
 
 # If this task is not used, the CLI will be downloaded from an external nuget feed
-- task: UiPathInstallPlatform@2
+- task: UiPathInstallPlatform@2.10.2941586
 
-- task: UiPathTest@ 2.10
+- task: UiPathTest@2.10.2941586
   inputs:
     attachRobotLogs: true
     testTarget: 'TestProject'
