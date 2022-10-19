@@ -11,7 +11,7 @@ steps:
 # If this task is not used, the CLI will be downloaded from an external nuget feed
 - task: UiPathInstallPlatform@2
 
-- task: UiPathTest@2
+- task: UiPathTest@2.11
   inputs:
     attachRobotLogs: true
     testTarget: 'TestProject'
